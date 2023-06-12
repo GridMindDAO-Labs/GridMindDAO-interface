@@ -1,0 +1,63 @@
+const market = {
+  'market.title': 'Invitation Details',
+  'market.invitees': 'Number Of Invitees',
+  'market.team': 'Team Performance',
+  'market.level': '({{msg}})',
+  'market.usd': 'U',
+  'market.usd.info1': 'Total Income Of Subordinates',
+  'market.usd.info2': 'Current Acceleration Rate',
+  'market.community.ranking': 'Community Ranking',
+  'market.invitation': 'Invitation',
+  'market.invitation.tips': 'Tip: Users need to pledge before they can invite new users who have not pledged',
+  'market.consensus.title': 'Description Of The Invitation Mechanism',
+  'market.consensus.content1':
+    'You can only invite sub-users if you have pledged yourself. At the same time, if the invited user has already performed financial operations before being invited, he will not be able to be invited. When the invited user has performed a staking operation through the invitation link, it will be counted as a valid invitation. ',
+  'market.consensus.content2':
+    'For every 200U increase in the total income of direct subordinates, an additional 1% can be received as an invitation reward when receiving wealth management income. The grading system is as follows:',
+  'market.consensus.content3':
+    'Ordinary users: effectively invite users >=1 directly, and the upper limit of invitation rewards when receiving wealth management income is 120%',
+  'market.consensus.content4':
+    'Elementary community: effectively directly invite users >=10 people, the team performance is 1wU, and the upper limit of invitation rewards when receiving wealth management income is 150%',
+  'market.consensus.content5':
+    'Intermediate community: effectively directly invite users >=20 people, the team performance is 8wU, directly subordinate to 3 primary communities, and the upper limit of invitation rewards when receiving wealth management income is 180%',
+  'market.consensus.content6':
+    'Advanced community: effectively directly invite users >=30 people, the team performance is 35wU, directly subordinate to 3 intermediate communities, and the upper limit of invitation rewards when receiving wealth management income is 200%',
+  'market.consensus.content7':
+    'Every time you receive wealth management income, the invitation reward you get will be evenly distributed to the 28-day block output, and you can receive the invitation income at any time',
+  'market.copy.title': 'Copy Invitation Link',
+  'market.copy.code': 'QR Code',
+  'market.copy.save': 'Save QR Code',
+  'market.tabbar.title': 'Invitation',
+  'market.reward.total': 'Total Reward',
+  'market.reward.current': 'Receivable Earnings',
+  'market.reward.btn': 'Receive Earnings',
+  'market.list.title': 'Invitee',
+  'market.list.title1': 'Address',
+  'market.list.title2': 'Time',
+  'market.list.title3': 'Total Pledge Amount',
+  'market.copy.success': 'Copy Success',
+  'market.reward.tip1': 'No Rewards',
+  'market.reward.tip2': 'Receive income successfully',
+  'market.direct.push': 'Direct Push',
+  'market.direct.info0': 'Ordinary User',
+  'market.direct.info1': 'Primary Community',
+  'market.direct.info2': 'Intermediate Community',
+  'market.direct.info3': 'Senior Community',
+  'market.leaderboard.period.tips1': '{{min}}~{{max}} Period',
+  'market.leaderboard.period.tips2': '{{msg}}',
+  'market.leaderboard.period.tips.placeholder': 'Please Choose',
+  'market.community.title1': 'Junior',
+  'market.community.title2': 'Intermediate',
+  'market.community.title3': 'Advanced',
+  'market.leader.columns.title1': 'Ranking',
+  'market.leader.columns.title2': 'Address',
+  'market.leader.columns.title3': 'Total',
+  'market.leader.columns.title4': 'Award',
+  'market.leader.h5.title1': 'Promotion',
+  'market.leader.title': 'Community Leaderboard',
+  'market.leader.select.title1': 'Select Issues',
+  'market.leader.select.title2': 'Time Of This Issue',
+  'market.leader.select.title3': 'Total Reward',
+}
+
+export default market

@@ -1,0 +1,453 @@
+@import '~antd/lib/style/themes/default.less';
+@import './removeDefault.less';
+
+@fontImg: '../font/';
+
+@font-face {
+  font-family: 'NotoSansHans-Bold';
+  src: url('@{fontImg}NotoSansHans-Bold.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansHans-Regular';
+  src: url('@{fontImg}NotoSansHans-Regular.otf');
+}
+
+@cus_gary: #c8c8d9;
+@cus_block: #333;
+
+.wallet-profile-modal {
+  .ant-modal-body {
+    padding: 1.5rem 0.63rem !important;
+  }
+}
+.finance-modals {
+  display: none !important;
+}
+.common-modal-ranking {
+  .ant-modal-body {
+    padding: 1rem 0.94rem 0 1.56rem !important;
+  }
+}
+.common-modal {
+  .ant-modal {
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: none;
+      position: absolute;
+      width: 100%;
+      height: 2.5rem;
+      bottom: -0.38rem;
+      z-index: -1;
+      background: #dcdcdc;
+      border-radius: 0.63rem;
+    }
+  }
+  .ant-modal-body {
+    padding: 1rem 0.94rem 2.19rem 1.56rem;
+  }
+  .ant-modal-close-x .anticon svg {
+    width: 1.88rem;
+    height: 1.88rem;
+    position: absolute;
+    top: 0.94rem;
+    right: 0.94rem;
+    fill: @cus_block;
+    &:hover {
+      fill: @cus_gary;
+    }
+  }
+  .h3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.94rem 0 1.56rem;
+  }
+  .h3,
+  h3 {
+    font-family: 'NotoSansHans-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.88rem;
+    color: @heading-color;
+    text-align: start;
+    margin-top: 0 1.94rem 0 0.75rem;
+    margin-bottom: 2.81rem;
+  }
+  .wallet-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.94rem 0 0.75rem;
+    .choose-info {
+      margin-bottom: 2.63rem;
+      width: 6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      .choose-span {
+        font-family: 'NotoSansHans-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.88rem;
+        line-height: 1.31rem;
+        margin-top: 0.69rem;
+        color: @heading-color;
+      }
+      &:hover {
+        .choose-span {
+          color: @theme;
+        }
+      }
+    }
+  }
+  .chose-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media (min-width: 768px) {
+    .ant-modal {
+      &::after {
+        content: '';
+      }
+    }
+    .ant-modal-body {
+      padding: 1.56rem 2.81rem;
+    }
+    .h3 {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2.81rem;
+    }
+    .h3,
+    h3 {
+      font-family: 'NotoSansHans-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.88rem;
+      color: @heading-color;
+      text-align: center;
+      margin-top: 0.94rem;
+      margin-bottom: 3.13rem;
+    }
+    .wallet-list {
+      margin: 0 5.63rem;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .choose-info {
+        margin-bottom: 3.63rem;
+        width: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        .choose-span {
+          font-family: 'NotoSansHans-Regular';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.88rem;
+          line-height: 1.31rem;
+          margin-top: 1.25rem;
+          color: @heading-color;
+        }
+        &:hover {
+          .choose-span {
+            color: @theme;
+          }
+        }
+      }
+    }
+    .chose-link {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.proposals-info-modal {
+  .ant-modal-body {
+    padding: 1rem 0 2.19rem !important;
+  }
+  @media (min-width: 768px) {
+    .ant-modal-body {
+      padding: 1.56rem 0 !important;
+    }
+  }
+}
+
+.common-drawer {
+  .ant-drawer-header-title {
+    flex-direction: row-reverse;
+    .ant-drawer-close {
+      margin-right: 0;
+      font-size: 2rem;
+      color: @cus_gary;
+    }
+  }
+  .ant-drawer-header {
+    border-bottom: 0.06rem dashed #f0f0f0;
+  }
+}
+
+.wallet-connect-h5-drawer {
+  .ant-drawer-body {
+    padding: 0;
+  }
+}
+
+/** ant message customize css */
+.message-global {
+  // top: 0;
+  // margin-bottom: 0.5rem;
+  // width: 100%;
+  // min-height: 3.75rem;
+  // background-color: fade(@theme, 70%);
+  // box-shadow: 0 0.19rem 0.38rem -0.25rem rgb(0 0 0 / 12%), 0 0.38rem 1rem 0 rgb(0 0 0 / 8%), 0 0.56rem 1.75rem 0.5rem rgb(0 0 0 / 5%);
+  // .ant-message-notice-content {
+  //   box-shadow: none;
+  //   background: transparent;
+  //   font-weight: 400;
+  //   color: #fff;
+  // }
+}
+
+.languageOverlayClassName {
+  .ant-popover-content {
+    width: 8.13rem;
+    background: #fff;
+    text-align: center;
+    border-radius: 0.31rem;
+    padding: 0.25rem 0;
+    box-shadow: @shadow-2;
+  }
+  .ant-popover-inner-content {
+    padding: 0.5rem;
+  }
+  .ant-popover-inner {
+    box-shadow: none;
+  }
+}
+
+.bjLogo {
+  width: 1.38rem;
+  height: 1.38rem;
+  margin-left: 0.69rem;
+}
+
+.noactive {
+  background: @theme;
+  border: none;
+}
+
+.wallet-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer-mask {
+  .ant-drawer-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .drawer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .drawer-info {
+    margin-top: 2.5rem;
+  }
+  .drawer-span {
+    width: 15rem;
+    height: 4.25rem;
+    background: #ffffff;
+    border: 1px solid #2f303b;
+    border-radius: 2.13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2f303b;
+    &:hover {
+      border: 1px solid @theme;
+      color: @theme;
+    }
+  }
+  .ant-drawer-close {
+    position: absolute;
+    right: 0;
+  }
+  .active-info {
+    color: @theme;
+    h3 {
+      color: @theme;
+    }
+  }
+}
+
+.ant-menu-submenu {
+  .navlink-active {
+    color: @theme !important;
+    font-size: 0.88rem;
+    font-weight: 600;
+    font-family: 'NotoSansHans-Regular';
+  }
+  .navlink-default {
+    color: #999999 !important;
+    font-family: 'NotoSansHans-Regular';
+    font-weight: 400;
+    font-size: 0.88rem;
+    &:hover {
+      content: '';
+      font-weight: 600;
+      color: @theme !important;
+    }
+  }
+  .navlink-child-title {
+    padding: 0 0.63rem;
+  }
+}
+
+/*滚动条整体样式,高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: white;
+}
+
+/*滚动条里面小方块*/
+::-webkit-scrollbar-thumb {
+  border-radius: 0.75rem;
+  background: #d9d9d9;
+  -webkit-box-shadow: none;
+}
+
+/*滚动条里面轨道*/
+::-webkit-scrollbar-track {
+  background: transparent;
+  -webkit-box-shadow: none;
+}
+
+.dao-skeleton {
+  .ant-skeleton-content .ant-skeleton-paragraph > li {
+    height: 1.94rem;
+  }
+  .ant-skeleton-content .ant-skeleton-title {
+    height: 1.94rem;
+  }
+  .ant-skeleton-header .ant-skeleton-avatar-lg {
+    width: 1.94rem;
+    height: 1.94rem;
+    line-height: 1.94rem;
+  }
+  @media (min-width: 768px) {
+    .ant-skeleton-content .ant-skeleton-paragraph > li {
+      height: 3.13rem;
+    }
+    .ant-skeleton-content .ant-skeleton-title {
+      height: 3.13rem;
+    }
+    .ant-skeleton-header .ant-skeleton-avatar-lg {
+      width: 3.13rem;
+      height: 3.13rem;
+      line-height: 3.13rem;
+    }
+  }
+}
+
+.ant-table-ping-right:not(.ant-table-has-fix-right) .ant-table-container::after {
+  box-shadow: none;
+}
+
+.ant-select-dropdown {
+  border-radius: 0.25rem;
+  .ant-select-item {
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    color: #999999;
+  }
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    color: @theme;
+    background-color: white;
+  }
+}
+
+.tokens-popover {
+  .ant-popover-inner-content {
+    padding: 0.63rem 0;
+  }
+}
+
+.ant-form-item-with-help .ant-form-item-explain {
+  min-height: 0;
+}
+.ant-form-item {
+  margin-bottom: 0;
+}
+
+.ant-modal-confirm-btns {
+  .ant-btn.ant-btn-primary {
+    background: #fbb665;
+    border-radius: 0.38rem;
+    min-height: 1.63rem;
+    font-size: 0.88rem;
+    color: #ffffff;
+    font-family: 'NotoSansHans-Regular';
+    font-weight: 400;
+    border: none;
+  }
+  .ant-btn.ant-btn-default {
+    border-radius: 0.38rem;
+    min-height: 1.63rem;
+    font-size: 0.88rem;
+    font-family: 'NotoSansHans-Regular';
+    font-weight: 400;
+  }
+}
+
+.ant-skeleton-element .ant-skeleton-input {
+  width: 100%;
+  min-width: 120px;
+}
+
+.gmdModal-show {
+  .ant-modal-body {
+    padding: 1rem 0 2.19rem;
+  }
+  .btns {
+    width: 18rem;
+  }
+}
+
+.uri-show {
+  .ant-modal-body {
+    padding: 0;
+    height: 95vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .ant-modal-body {
+      padding: 0;
+      padding-left: 2.5%;
+      height: 95vh;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+    }
+  }
+}

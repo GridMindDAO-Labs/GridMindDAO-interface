@@ -1,0 +1,60 @@
+/* eslint-disable */
+const message = {
+  'message.finance.tips1': 'Not supported at the moment, please contact the administrator',
+  'message.finance.tips2': 'The deposit amount cannot be 0',
+  'message.finance.tips3': 'A minimum deposit value of {{msg}}USD is required',
+  'message.finance.tips4': 'User account balance is insufficient: {{msg}}',
+  'message.finance.tips5': 'Deposit successful',
+  'message.finance.tips6': 'Deposit failed',
+  'message.finance.tips7': 'Pledge successful',
+  'message.finance.tips8': 'Please Select NFT',
+  'message.finance.tips9': 'Contact the administrator to set the annualized rate',
+
+  'message.earning.tips0': 'Please Contact Administrator',
+  'message.earning.tips1': 'There is currently no income to receive',
+  'message.earning.tips7': 'Cancel',
+  'message.earning.tips6': 'OK',
+  'message.earning.tips8': 'Received successfully',
+  'message.earning.tips9': 'Received failed',
+  'message.earning.tips10': 'Redeem succeeded',
+  'message.earning.tips11': 'Redeem failed',
+  'message.earning.tips12': 'Renewal succeeded',
+  'message.earning.tips13': 'Renewal failed',
+
+  'message.swap.tips1': 'Swap exchange succeeded',
+  'message.swap.tips2': 'Swap exchange failed',
+  'message.swap.tips3': 'Does not support corresponding to the same token',
+  'message.swap.tips4': 'User account {{types}} has insufficient balance: {{balance}}',
+
+  'message.dao.tips1': 'Delegation succeeded',
+  'message.dao.tips2': 'Copy successful',
+
+  'message.create.tips1': 'Please check whether the current parameters are complete',
+  'message.create.tips2': `The minimum voting power for creating a proposal: {{proposalMinVotes}}, the user's current voting power is: {{currentProposalVotes}}`,
+  'message.create.tips3': 'Proposal created successfully',
+  'message.create.tips4': 'Failed to create proposal',
+  'message.create.tips5': 'Address error',
+  'message.create.tips6': 'No json',
+
+  'message.dao.tips3': 'The proposal was canceled successfully',
+  'message.dao.tips4': 'Failed to cancel the proposal',
+  'message.dao.tips5': 'User has voted',
+  'message.dao.tips.1': 'Disapproval',
+  'message.dao.tips.2': 'Yes',
+  'message.dao.tips6': 'User voted {{msg}} successfully',
+  'message.dao.tips7': 'User failed to vote {{msg}}',
+  'message.dao.tips8': 'Join the queue successfully',
+  'message.dao.tips9': 'Failed to join the queue',
+  'message.dao.tips10': 'Account is not whitelisted',
+  'message.dao.tips11': 'Whether to implement the proposal',
+  'message.dao.tips12': 'Queue completion time:',
+  'message.dao.tips13': 'Execution succeeded',
+  'message.dao.tips14': 'Execution failed',
+
+  'message.create.tips7': 'Create Proposal Information Confirmation',
+  'message.create.tips8': 'Proposal Title',
+  'message.create.tips9': 'Execute contract description',
+  'message.create.tips10': 'Submit',
+}
+
+export default message

@@ -1,2 +1,1 @@
-# GridMindDAO-interface
-GridMindDAO-interface
+# AI-CHAIN-WEB
